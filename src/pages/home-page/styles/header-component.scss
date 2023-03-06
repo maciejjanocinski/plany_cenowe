@@ -1,0 +1,34 @@
+@mixin header-component {
+  .header-component {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 1;
+    border-radius: 12px;
+    margin-bottom: 48px;
+
+    & &__header {
+
+      margin-top: 2px;
+      font-size: var(--h1-font-size);
+      letter-spacing: var(--letter-space-big);
+      margin-bottom: 12px;
+
+    }
+
+    & &__text {
+      margin-bottom: 0px;
+      text-align: center;
+      line-height: var(--text-line-height);
+      color: var(--light-color-font);
+      width: 250px;
+      letter-spacing: var(--letter-space-small);
+      margin-left: var(--margin-large);
+      margin-right: var(--margin-large);
+      padding-left: 2px;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import '../../../global-styles/style.scss';
+
+@import './box-component.scss';
+@import './header-component.scss';
+@import './price-component.scss';
+
+
+#home-page {
+    display: var(--display);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: var(--box-width);
+    height: var(--box-height);
+    grid-template-columns: var(--grid);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 17px;
+    margin: var(--margin-box);
+    max-width: 100%;
+    background-color: var(--off-white);
+
+
+
+
+}
+
+@include header-component;
+@include box-component;
+@include price-component;
+
+
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: var(--row-direction);
+    align-items: var(--align-self);
+}

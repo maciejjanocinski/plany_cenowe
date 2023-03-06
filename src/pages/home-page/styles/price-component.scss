@@ -1,0 +1,52 @@
+@mixin price-component {
+    .price-component {
+
+        margin-left: var(--margin-large);
+
+        margin-bottom: var(--margin-bottom-price);
+        margin-right: var(--margin-right-price);
+        margin-top: 0px;
+        position: relative;
+
+
+
+
+        height: 42px;
+        width: 140px;
+
+        & &__currency {
+            font-size: var(--p-font-size);
+            color: var(--darkblue);
+            letter-spacing: var(--letter-space-small);
+            position: absolute;
+            font-weight: 600;
+            top: 5px;
+        }
+
+        & &__value {
+            font-size: var(--h1-font-size);
+            font-weight: 600;
+            color: var(--darkblue);
+            position: absolute;
+            left: 9px;
+            letter-spacing: var(--letter-space-big);
+        }
+
+        & &__period {
+            color: var(--light-color-font);
+            position: absolute;
+            bottom: -8px;
+            right: 26px;
+        }
+
+        &.price-component--dark {
+            span {
+                color: white;
+            }
+
+            & .price-component__period {
+                color: var(--light-color-font);
+            }
+        }
+    }
+}
